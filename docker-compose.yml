@@ -1,0 +1,14 @@
+version: '1.0'
+
+services:
+  carsharing:
+    image: 'new-image3'
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:80
+  postgres:
+    image: 'postgres:15'
+    depends_on:
+      - carsharing
