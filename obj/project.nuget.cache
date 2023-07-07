@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XJcjyE4BtprCKZfXypI5ZpkeK3TYM0faVDQywBIJ/Fb0alfcT8VTK9P6ROFPh0K7BAhluSblbOek17NB+wXYzg==",
+  "dgSpecHash": "srSIBqxgS67kubE/98/TJNGcJk8AxDc+3b27JRM/r5eSjWfLbwAR3VeHwGhDxvr9H7vlrAhc+46m+rFcfr9m7A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj",
+  "projectFilePath": "C:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Сергей\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Сергей\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",

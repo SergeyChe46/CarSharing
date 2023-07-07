@@ -18,6 +18,7 @@ namespace CarSharing.Controllers
         }
 
         [HttpGet("all")]
+        [Authorize]
         public async Task<string> GetAll()
         {
             return await Task.Run(() => "return all");

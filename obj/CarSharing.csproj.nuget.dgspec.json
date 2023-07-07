@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj": {}
+    "C:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj": {
+    "C:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj",
+        "projectUniqueName": "C:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj",
         "projectName": "CarSharing",
-        "projectPath": "c:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj",
+        "projectPath": "C:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\CarSharing.csproj",
         "packagesPath": "C:\\Users\\Сергей\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\obj\\",
+        "outputPath": "C:\\Users\\Сергей\\Projects\\CSharp\\CarSharing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
