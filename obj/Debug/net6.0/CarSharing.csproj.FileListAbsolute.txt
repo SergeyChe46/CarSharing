@@ -56,3 +56,5 @@ C:\Users\Сергей\Projects\CSharp\CarSharing\bin\Debug\net6.0\Microsoft.AspN
 C:\Users\Сергей\Projects\CSharp\CarSharing\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Сергей\Projects\CSharp\CarSharing\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Сергей\Projects\CSharp\CarSharing\bin\Debug\net6.0\web.config
+C:\Users\Сергей\Projects\CSharp\CarSharing\bin\Debug\net6.0\CarSharing.Contracts\obj\CarSharing.Contracts.csproj.nuget.dgspec.json
+C:\Users\Сергей\Projects\CSharp\CarSharing\bin\Debug\net6.0\CarSharing.Contracts\obj\project.assets.json
