@@ -11,7 +11,7 @@ namespace CarSharing.Context
 {
     public class ApplicationContext : IdentityUserContext<IdentityUser>
     {
-        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        public ApplicationContext(DbContextOptions options) : base(options)
         {
 
         }
@@ -21,5 +21,6 @@ namespace CarSharing.Context
         }
 
         public DbSet<Car> Cars { get; set; }
+        public DbSet<CarBrand> Brands { get; set; }
     }
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CarSharing.Core.Repository;
+using CarSharing.Entities.Car;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,17 +13,24 @@ namespace CarSharing.Controllers
     [Route("[controller]")]
     public class CarController : ControllerBase
     {
-        [HttpGet]
-        public async Task<string> Get()
+        private readonly RepositoryManager _manager;
+        public CarController(RepositoryManager manager)
         {
-            return await Task.Run(() => "Hello World");
+            _manager = manager;
         }
 
-        [HttpGet("all")]
-        [Authorize]
-        public async Task<string> GetAll()
+        [HttpGet]
+        public async Task<ActionResult<List<Car>>> GetAll()
         {
-            return await Task.Run(() => "Hello");
+            List<Car> result = await _manager.Cars.GetAll();
+            return result.Count > 0 ? Ok(result) : NoContent();
         }
+
+        // [HttpGet("all")]
+        // [Authorize]
+        // public async Task<string> GetAll()
+        // {
+        //     return await Task.Run(() => "Hello");
+        // }
     }
 }

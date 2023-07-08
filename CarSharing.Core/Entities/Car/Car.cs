@@ -9,7 +9,8 @@ namespace CarSharing.Entities.Car
     public class Car
     {
         public Guid Id { get; set; }
-        public CarBrand Brand { get; set; }
+        public Guid BrandId { get; set; }
+        public CarBrand Brand { get; set; } = null!;
         public string Model { get; set; }
         public int BirthYear { get; set; }
         public DateTime LastRentDate { get; set; }

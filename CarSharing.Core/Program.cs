@@ -1,3 +1,4 @@
+using CarSharing.Core.Services;
 using CarSharing.Services;
 using Microsoft.AspNetCore.HttpOverrides;
 
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 // ./Services
 builder.Services.RegisterContext(configuration);
 builder.Services.ConfigureIdentity(configuration);
+builder.Services.RepositoryManagerRegister();
 builder.Services.ConfigureJwt();
 
 var app = builder.Build();
@@ -32,11 +34,10 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.MapControllers();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();
