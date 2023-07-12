@@ -119,3 +119,4 @@ C:\Users\Сергей\Projects\CSharp\CarSharing\CarSharing.Core\obj\Debug\net6.
 C:\Users\Сергей\Projects\CSharp\CarSharing\CarSharing.Core\obj\Debug\net6.0\CarSharing.pdb
 C:\Users\Сергей\Projects\CSharp\CarSharing\CarSharing.Core\obj\Debug\net6.0\CarSharing.genruntimeconfig.cache
 C:\Users\Сергей\Projects\CSharp\CarSharing\CarSharing.Core\obj\Debug\net6.0\ref\CarSharing.dll
+C:\Users\Сергей\Projects\CSharp\CarSharing\CarSharing.Core\bin\Debug\net6.0\Mapster.dll

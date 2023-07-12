@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using CarSharing.Context;
 using CarSharing.Contracts;
 using Microsoft.EntityFrameworkCore;
@@ -45,7 +46,7 @@ namespace CarSharing.Repositories
         /// </summary>
         /// <param name="expression">Условие, по которому фильтруются записи.</param>
         /// <returns>Результат запроса.</returns>
-        public virtual async Task<List<T>> GetByExpression(Func<T, bool> expression)
+        public virtual async Task<List<T>> GetByExpression(Expression<Func<T, bool>> expression)
         {
             return await _context.Set<T>()
                 .Where(expression)

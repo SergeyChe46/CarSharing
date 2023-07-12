@@ -1,5 +1,10 @@
+using System.Text.Json.Serialization;
+using CarSharing.Core.Entities.Car;
 using CarSharing.Core.Services;
+using CarSharing.Core.Services.Mapping;
+using CarSharing.Entities.Car;
 using CarSharing.Services;
+using Mapster;
 using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +12,11 @@ var configuration = builder.Configuration;
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,13 +26,9 @@ builder.Services.RegisterContext(configuration);
 builder.Services.ConfigureIdentity(configuration);
 builder.Services.RepositoryManagerRegister();
 builder.Services.ConfigureJwt();
+builder.Services.CarMapper();
 
 var app = builder.Build();
-app.UseForwardedHeaders(new ForwardedHeadersOptions
-{
-    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-});
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -33,7 +38,6 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = "";
     });
 }
-
 app.MapControllers();
 app.UseHttpsRedirection();
 
